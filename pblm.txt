@@ -1,0 +1,22 @@
+The data is related to a coding platform that hosts coding challenges. They have a unique business model, where they crowdsource problems from various creators(authors). These authors create the problem and release it on the client's platform. The users then select the challenges they want to solve. 
+
+This dataset contains information about each coding problem. It contains information about the problem, about the author who created it and a list of users who have attempted the problem.
+
+Below are the fields that can be founf within each document in the collection -
+
+- `challenge_id` - Unique id of the challenge problem
+
+- `programming_language` - Programming language for the challenge
+
+- `total_submissions` - Total submissions by all users
+
+- `publish_date` - Publishing date for the challenge
+
+- `author` - Embedded document about the author of the challenge.
+> - `id` - Author id
+> - `gender` - Author gender
+> - `org_id` - Organisation if for author
+
+- `users` - List of users who have attempted the challenge
+
+
